@@ -1,0 +1,2 @@
+include: package:flutter_lightech_lint_rules/analysis_options.yaml
+

@@ -1,57 +1,45 @@
 # Flutter Linter Rules
 
-A set of linting rules for Flutter projects to enforce best practices and coding standards.
+A comprehensive set of strict linting rules for Flutter projects to enforce LighTech's best practices and coding standards.
 
-## Getting Started
+## 📦 Installation
 
-### Installation
-
-Add `flutter_lightech_lint_rules` as a dependency in your `pubspec.yaml`:
+Add `flutter_lightech_lint_rules` as a dev dependency in your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
   flutter_lightech_lint_rules:
     git:
       url: git@github.com:LighTechLLC/flutter_lightech_lint_rules.git
+      ref: 1.1.0  # Use specific version for stability
 ```
 
-### Setup
+## 🚀 Setup
 
-To start using the linting rules, include them in your `analysis_options.yaml`:
+Include the lint rules in your `analysis_options.yaml`:
 
 ```yaml
 include: package:flutter_lightech_lint_rules/analysis_options.yaml
 ```
 
-You can also override specific rules by adding them directly to your `analysis_options.yaml`:
+### Customizing Rules
 
-```yaml
-linter:
-  rules:
-    avoid_print: true
-    # Add more custom rules here
-```
-
-### Example
-
-Here's an example of how your `analysis_options.yaml` might look:
+You can override specific rules if needed:
 
 ```yaml
 include: package:flutter_lightech_lint_rules/analysis_options.yaml
 
 linter:
   rules:
-    avoid_print: true
-    unnecessary_null_checks: false
+    # Disable specific rule
+    lines_longer_than_80_chars: false
+    # Enable additional rule
+    prefer_single_quotes: true
 ```
 
-## Rules Overview
+## 📋 What's New
 
-The rules provided by `flutter_lightech_lint_rules` cover a wide range of areas:
-
-- **Style Guidelines:** Rules for naming conventions, code organization, and formatting.
-- **Best Practices:** Rules that encourage the use of effective patterns and discourage common pitfalls.
-- **Error Prevention:** Avoid bugs and other issues before they occur.
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history and migration guides.
 
 ## Contributing
 

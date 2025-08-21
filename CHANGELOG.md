@@ -1,3 +1,8 @@
+## 1.1.1
+
+### Added
+- `formatter` section with `trailing_commas: automate` - Enforces trailing commas everywhere for better code formatting and cleaner diffs
+
 ## 1.1.0
 
 ### Added
